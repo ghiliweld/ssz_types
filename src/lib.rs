@@ -39,11 +39,13 @@
 
 #[macro_use]
 mod bitfield;
+mod beacon_block;
 mod fixed_vector;
 pub mod serde_utils;
 mod tree_hash;
 mod variable_list;
 
+pub use beacon_block::SignedBeaconBlock;
 pub use bitfield::{BitList, BitVector, Bitfield};
 pub use fixed_vector::FixedVector;
 pub use typenum;
