@@ -233,22 +233,9 @@ fn assert_ssz_roundtrip<T: Encode + Decode + PartialEq + Debug>(item: &T) {
 }
 
 mod beacon_block_tests {
-    use crate::{assert_ssz_roundtrip, Decode, Encode, SignedBeaconBlock};
+    use crate::{Decode, Encode, SignedBeaconBlock};
 
     use std::fs;
-    //use std::io::Read;
-
-    // #[test]
-    // fn bool_test() {
-    //     let success = 2 > 1;
-    //     assert_eq!(success, true);
-    // }
-
-    // #[test]
-    // fn default_beacon_block_round_trip_test() {
-    //     let default_block = SignedBeaconBlock::default();
-    //     assert_ssz_roundtrip(&default_block);
-    // }
 
     #[test]
     fn real_beacon_block_roundtrip_test() {
